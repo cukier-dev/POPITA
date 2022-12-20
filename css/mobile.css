@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial;
+  font-weight: bold;
+  background: #e84b83;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e84b83), color-stop(20%, #dd9b49), to(#ceff00));
+  background: linear-gradient(0deg, #e84b83 0%, #dd9b49 20%, #ceff00 100%);
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[5];
+  -ms-grid-columns: 1fr;
+      grid-template: repeat(5, 1fr)/1fr;
+  margin-bottom: 15%;
+  margin-top: 50px;
+  margin-left: 7.5%;
+}
+
+.menu_mobile_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu--element {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ff2fb3;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 2px 0 2px 0;
+}
+
+.menu--element:hover {
+  color: #392fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.left_element {
+  color: #cdff00;
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.left_element img {
+  width: 100%;
+}
+
+.left_text {
+  margin-top: 20px;
+}
+
+.gif_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10%;
+}
+
+.gif {
+  height: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.right_element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.right_element img {
+  width: 100%;
+}
+/*# sourceMappingURL=mobile.css.map */
