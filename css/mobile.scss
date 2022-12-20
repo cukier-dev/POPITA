@@ -6,10 +6,11 @@ body {
     font-family: Arial;
     font-weight: bold;
     background: rgb(232,75,131);
-    background: linear-gradient(0deg, rgba(232,75,131,1) 0%, rgba(221,155,73,1) 20%, rgba(206,255,0,1) 100%);
+    background: linear-gradient(0deg, rgba(232,75,131,1) 10%, rgba(221,155,73,1) 20%, rgba(206,255,0,1) 100%);
     overflow-x: hidden;
     display: flex;
     flex-flow: column;
+    height: 250vh;
 }
 
 p {

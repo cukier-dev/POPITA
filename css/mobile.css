@@ -6,8 +6,8 @@ body {
   font-family: Arial;
   font-weight: bold;
   background: #e84b83;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e84b83), color-stop(20%, #dd9b49), to(#ceff00));
-  background: linear-gradient(0deg, #e84b83 0%, #dd9b49 20%, #ceff00 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #e84b83), color-stop(20%, #dd9b49), to(#ceff00));
+  background: linear-gradient(0deg, #e84b83 10%, #dd9b49 20%, #ceff00 100%);
   overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,6 +16,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  height: 250vh;
 }
 
 p {
