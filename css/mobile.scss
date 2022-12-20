@@ -10,7 +10,6 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-flow: column;
-    height: 250vh;
 }
 
 p {
@@ -53,7 +52,6 @@ img {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-
 }
 
 .left_element {
@@ -75,7 +73,7 @@ img {
     width: 100%;
     height: 80%;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .gif {
@@ -92,4 +90,6 @@ img {
     img {
         width:100%;
     }
+
+    padding-bottom: 10%;
 }
