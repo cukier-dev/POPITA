@@ -23,6 +23,11 @@ p {
   line-height: 1.5;
 }
 
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .menu {
   display: -ms-grid;
   display: grid;

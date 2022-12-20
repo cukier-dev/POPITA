@@ -17,6 +17,10 @@ p {
     line-height: 1.5;
 }
 
+img {
+    object-fit: contain;
+}
+
 .menu {
     display: grid;
     grid-template: repeat(5, 1fr) / 1fr;
@@ -84,6 +88,7 @@ p {
     width: 80%;
     height: 100%;
     margin-left: 10%;
+
     img {
         width:100%;
     }
