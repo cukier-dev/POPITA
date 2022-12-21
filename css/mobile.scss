@@ -5,11 +5,18 @@
 body {
     font-family: Arial;
     font-weight: bold;
-    background: rgb(232,75,131);
-    background: linear-gradient(0deg, rgba(232,75,131,1) 10%, rgba(221,155,73,1) 20%, rgba(206,255,0,1) 100%);
+    background:rgba(206,255,0,1);
     overflow-x: hidden;
     display: flex;
     flex-flow: column;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: flex;
 }
 
 p {
@@ -22,8 +29,8 @@ img {
 
 .menu {
     display: grid;
-    grid-template: repeat(5, 1fr) / 1fr;
-    margin-bottom: 15%;
+    grid-template: repeat(3, 1fr) / 1fr;
+    margin-bottom: 10%;
     margin-top: 50px;
     margin-left: 7.5%;
 }
@@ -83,6 +90,7 @@ img {
 
 .right_element {
     display: flex;
+    flex-direction: column;
     width: 80%;
     height: 100%;
     margin-left: 10%;
@@ -92,4 +100,8 @@ img {
     }
 
     padding-bottom: 10%;
+}
+
+.marginTop10 {
+    margin-top: 10%;
 }

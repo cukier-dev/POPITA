@@ -5,9 +5,7 @@
 body {
   font-family: Arial;
   font-weight: bold;
-  background: #e84b83;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #e84b83), color-stop(20%, #dd9b49), to(#ceff00));
-  background: linear-gradient(0deg, #e84b83 10%, #dd9b49 20%, #ceff00 100%);
+  background: #ceff00;
   overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,6 +14,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 p {
@@ -30,10 +38,10 @@ img {
 .menu {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[5];
+  -ms-grid-rows: (1fr)[3];
   -ms-grid-columns: 1fr;
-      grid-template: repeat(5, 1fr)/1fr;
-  margin-bottom: 15%;
+      grid-template: repeat(3, 1fr)/1fr;
+  margin-bottom: 10%;
   margin-top: 50px;
   margin-left: 7.5%;
 }
@@ -111,6 +119,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 80%;
   height: 100%;
   margin-left: 10%;
@@ -119,5 +131,9 @@ img {
 
 .right_element img {
   width: 100%;
+}
+
+.marginTop10 {
+  margin-top: 10%;
 }
 /*# sourceMappingURL=mobile.css.map */

@@ -5,20 +5,27 @@
 body {
     font-family: Arial;
     font-weight: bold;
+    display: flex;
+    flex-flow: column;
 
     background: rgb(232,75,131);
     background: linear-gradient(0deg, rgba(232,75,131,1) 0%, rgba(221,155,73,1) 20%, rgba(206,255,0,1) 100%);
-    display: flex;
-    flex-flow: column;
 }
 
 img {
     object-fit: contain;
 }
+.desktop {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
 
 .menu {
     display: grid;
-    grid-template: 1fr  / repeat(5, 1fr);
+    grid-template: 1fr  / repeat(3, 1fr);
     width: 90%;
     margin-bottom: 10vh;
     margin-top: 2%;
@@ -43,15 +50,6 @@ img {
 
 .menu--element:first-child {
     justify-content: flex-start;
-}
-
-
-.menu--element:nth-child(2) {
-    margin-left: -15%;
-}
-
-.menu--element:nth-child(4) {
-    margin-left: 15%;
 }
 
 .menu--element:last-child {

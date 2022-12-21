@@ -5,9 +5,6 @@
 body {
   font-family: Arial;
   font-weight: bold;
-  background: #e84b83;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e84b83), color-stop(20%, #dd9b49), to(#ceff00));
-  background: linear-gradient(0deg, #e84b83 0%, #dd9b49 20%, #ceff00 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +12,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  background: #e84b83;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e84b83), color-stop(20%, #dd9b49), to(#ceff00));
+  background: linear-gradient(0deg, #e84b83 0%, #dd9b49 20%, #ceff00 100%);
 }
 
 img {
@@ -22,12 +22,22 @@ img {
      object-fit: contain;
 }
 
+.desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
 .menu {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
-  -ms-grid-columns: (1fr)[5];
-      grid-template: 1fr/repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template: 1fr/repeat(3, 1fr);
   width: 90%;
   margin-bottom: 10vh;
   margin-top: 2%;
@@ -57,14 +67,6 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-}
-
-.menu--element:nth-child(2) {
-  margin-left: -15%;
-}
-
-.menu--element:nth-child(4) {
-  margin-left: 15%;
 }
 
 .menu--element:last-child {
